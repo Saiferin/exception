@@ -8,7 +8,7 @@ class BookTest {
     @Test
     public void shouldHaveAllFieldsAndMethodFromSuperClass() {
         Book book = new Book();
-//    book.
+
     }
 
     @Test
@@ -16,7 +16,7 @@ class BookTest {
         Product product = new Book();
         if (product instanceof Book) {
             Book book = (Book) product;
-//      book.
+
         }
     }
 
@@ -29,7 +29,6 @@ class BookTest {
     @Test
     public void shouldUseOverridedMethod() {
         Product product = new Book();
-        // Вопрос к аудитории: чей метод вызовется?
         product.toString();
     }
 }
