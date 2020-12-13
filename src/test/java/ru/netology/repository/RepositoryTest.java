@@ -37,9 +37,6 @@ class RepositoryTest {
 
     @Test
     public void removeByIdNotFoundException() {
-//        Product[] expected = new Product[]{firstB,secondB,thirdB,secondS,thirdS};
-//        Product[] actual = repository.removeById(7);
-//        assertArrayEquals(expected, actual);
         assertThrows(NotFoundException.class, () -> repository.removeById(9));
     }
 
